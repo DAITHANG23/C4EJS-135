@@ -1,0 +1,164 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1440px;
+}
+
+.hero-container {
+    background-color: #026d91;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.resume {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.hero-title {
+    display: flex;
+    margin: 15px;
+}
+
+.hero-content {
+    line-height: 25px;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-left: 80px;
+    margin-top: 40px;
+
+}
+
+.name {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.title-job {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.avatar {
+    display: flex;
+    flex-shrink: 1;
+}
+
+.intro {
+    margin: 10px auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+h4 {
+    background-color: #FF6600;
+    font-size: 30px;
+    text-align: center;
+}
+
+.interest {
+    padding: 20px;
+}
+
+.interest-content {
+    padding: 50px;
+}
+
+
+
+.skills-content {
+    line-height: 40px;
+    padding: 30px;
+}
+
+.education {
+    width: 600px;
+}
+
+.education-content {
+    line-height: 40px;
+    padding: 20px;
+}
+
+.edu-cat-1 {
+    padding-left: 50px;
+}
+
+.projects-content {
+    padding: 20px;
+    line-height: 40px;
+}
+
+.contact-container {
+    margin: 20px;
+}
+
+.contact {
+    padding: 10px;
+    margin: 20px;
+    line-height: 40px;
+}
+
+.interest-content {
+    padding: 20px;
+    line-height: 30px;
+}
+
+.contact-interest {
+    padding: 0px 700px 0px 20px;
+}
+
+.info-container {
+    position: relative;
+    max-width: 1440px;
+}
+
+.info-exp {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    width: 600px;
+}
+
+.p-1 {
+    font-size: 20px;
+}
+
+.footer {
+    background-color: #026d91;
+    border: 2px solid white;
+    max-width: 1440px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    width: 600px;
+    height: 500px;
+    border: 2px solid orangered;
+    border-radius: 16px;
+    background-color: #026d91;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    font-size: 17px;
+
+}
+
+.form-container .email-1 {
+    margin-bottom: 10px;
+}

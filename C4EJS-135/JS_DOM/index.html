@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css" />
+  <!-- link font google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <title>Homework JS DOM</title>
+</head>
+
+<body>
+  <!-- Bài 1 -->
+  <div class="homework01 container">
+    <h1>Homework 01: Light Controller</h1>
+    <div class="bulboff-container">
+      <img src="./image/pic_bulboff.gif" alt="" />
+    </div>
+    <div class="bulboff-buttons">
+      <!-- <button onclick="turnOff()">Turn off</button>
+      <button onclick="turnOn()">Turn on</button> -->
+      <button onclick="toggleBubble('off')">Turn off</button>
+      <button onclick="toggleBubble('on')">Turn on</button>
+    </div>
+  </div>
+  <!-- Bài 2 -->
+  <div class="homework02 container">
+    <h1>Homework 02: Register </h1>
+    <div class="button-register">
+      <button onclick="buttonRegister()">Đăng ký khóa học</button>
+    </div>
+
+    <div class="content-register">
+      <p>Khóa học chưa được đăng ký</p>
+    </div>
+  </div>
+
+  <!-- Bài 3 -->
+  <div class="homework03 container">
+    <h1>Homework 03: LOG IN</h1>
+
+    <div class="form">
+      <h2 class="title-form">Đăng nhập</h2>
+
+      <div class="account">
+        <label for="account">Tài khoản:</label>
+        <input type="text" name="account" id="account" value="" placeholder=" Your account">
+      </div>
+
+      <div class="password">
+        <label for="password">Mật khẩu:</label>
+        <input type="password" name="password" id="password" value="" placeholder="Your password">
+      </div>
+
+      <button onclick="buttonInform()">Thông Báo</button>
+    </div>
+  </div>
+
+  <!-- Bài 4 -->
+  <div class="homework04 container">
+    <h1>Homework 04: Pay Bill </h1>
+
+    <form class="pay-bill container">
+      <h3 class="padding">Pay Bill</h3>
+      <label for="total-bill">Tổng bill</label>
+      <div class="total-bill padding">
+        <input type="number">
+      </div>
+
+      <label for="tip-staff">Tip cho nhân viên %</label>
+      <div class="tip-staff padding">
+        <select id="mySelect">
+          <option value="#">Tiền tip</option>
+          <option value="low">Thấp</option>
+          <option value="medium">Trung bình</option>
+          <option value="good">Tốt</option>
+        </select>
+      </div>
+
+      <label for="member">Số người cùng đi</label>
+      <div class="member padding">
+        <input type="number">
+      </div>
+      <p class="inform"></p>
+      <p class="money-bill"> </p>
+      <button type="button" onclick="buttonPay()">Tính tiền thôi nào!</button>
+      <button type="button" onclick="resetform()">Reset</button>
+    </form>
+
+  </div>
+
+  <!-- Homework 05: Calculator -->
+
+  <div class="homework05 container">
+    <h1>Homework 05: Calculator</h1>
+
+    <div class="container-form container">
+        <h2>Bảng tính</h2>
+      <form class="calculator-form">
+      
+        <div class="calculator-input">
+          
+          <div>
+            <label for="number1 ">Nhập số thứ nhất:</label>
+            <input type="number" name="number1" id="number1">
+          </div>
+    
+          <div>
+            <label for="number2 ">Nhập số thứ hai:</label>
+            <input type="number" name="number2" id="number2">
+          </div>
+    
+          <div>
+            <label  for="result ">Kết quả:</label>
+            <input type="text" name="result" id="result" value="">
+          </div>
+        </div>
+        
+  
+        <div class="calculation">
+          <div><input type="radio" value="add" name="cal" id="add" > <label for="add">Cộng</label></div>
+          <div><input type="radio" value="min" name="cal" id="min"> <label for="min">Trừ</label></div>
+          <div><input type="radio" value="mul" name="cal" id="mul"> <label for="mul">Nhân</label></div>
+          <div><input type="radio" value="devi" name="cal" id="devi"> <label for="devi">Chia</label></div>
+          <button type="button" onclick="calculate()">Tính</button>
+        </div>
+
+      </form>
+      <div class="notice">
+        <p></p>
+        <button class="reset" onclick=" reset()">Reset</button>
+      </div>
+    </div>
+    </div>
+    
+
+  <script src="./index.js"></script>
+</body>
+
+</html>

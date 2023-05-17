@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="story" class="story">
+
+    </div>
+
+    <div class="chat">
+
+        <input id="message" type="text">
+        <button onclick="sendMessage()">
+            Send
+        </button>
+
+    </div>
+
+    <script>
+        let dom = this.document;
+        const answers = [
+            "I'm busy !",
+            "I am on my way.",
+            "I am coming !",
+            "You're right !"
+        ];
+        function sendMessage() {
+            let message = dom.getElementById("message").value;
+            let messageElement = dom.createElement("p");
+            messageElement.innerHTML = message;
+            messageElement.className = "message";
+
+            let createdAtElement = dom.createElement("p");
+            createdAtElement.className = "time"
+            createdAtElement.innerHTML = new Date().toUTCString();
+
+            dom.getElementById("story").appendChild(createdAtElement)
+            dom.getElementById("story").appendChild(messageElement)
+            dom.getElementById("message").value = "";
+
+            setTimeout( () => {
+                let mIndex = Math.floor(Math.random() * 3);
+                let answersElement = dom.createElement("p");
+                answersElement.innerHTML = answers[mIndex];
+                answersElement.className = "answer";
+                
+                let createdAtElement = dom.createElement("p");
+                createdAtElement.className = "time1";
+                createdAtElement.innerHTML = new Date().toUTCString();
+
+                dom.getElementById("story").appendChild(createdAtElement);
+                dom.getElementById("story").appendChild(answersElement);
+
+                dom.querySelector(".answer").classList.toggle("active");
+                dom.querySelector(".time1").classList.toggle("active");
+            },1000)
+        }
+    </script>
+</body>
+
+</html>
